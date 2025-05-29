@@ -293,9 +293,7 @@ def get_google_service():
 
     # Call the function
     # CSV 파일 경로
-    #csv_file = Path('data', f'my_activity_data=20250414143707.csv')
-    csv_file = Path('data', f'my_activity_data_20081003-04.csv')
-    #csv_file = Path('data', f'my_activity_data=2025.csv')
+    #csv_file = Path('data', f'my_recent_activity.csv')
 
     #add_events_from_csv(service, csv_file)
     return service
@@ -307,9 +305,7 @@ def get_google_service():
 
 def main():
     # CSV 파일 경로
-    #csv_file = Path('data', f'my_activity_data=20250414143707.csv')
-    csv_file = Path('data', f'my_activity_data_20081003-04.csv')
-    #csv_file = Path('data', f'my_activity_data=2025.csv')
+    csv_file = Path('data', f'my_recent_activity.csv')
     service = get_google_service()
     add_events_from_csv(service, csv_file)
 
